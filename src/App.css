@@ -102,6 +102,8 @@ font-weight: 650;
 }
 
 .form-grid input,
+.form-grid select,
+.panel select,
 .search-input {
 width: 100%;
 min-width: 0;
@@ -114,9 +116,56 @@ color: #172033;
 }
 
 .form-grid input:focus,
+.form-grid select:focus,
+.panel select:focus,
 .search-input:focus {
 border-color: #5367d5;
 box-shadow: 0 0 0 3px rgb(83 103 213 / 12%);
+}
+
+.section-nav {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin: 0 0 24px;
+}
+
+.section-nav a {
+padding: 8px 12px;
+border-radius: 8px;
+background: white;
+color: #4055c5;
+font-size: 14px;
+font-weight: 650;
+text-decoration: none;
+}
+
+.section-nav a:hover {
+background: #edf1ff;
+}
+
+.checkbox-field {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.checkbox-field input {
+width: auto;
+}
+
+.plan-list-header {
+margin-top: 28px;
+}
+
+.plan-list-header h2 {
+margin: 0;
+}
+
+.form-hint {
+margin-top: 12px;
+color: #68738a;
+font-size: 13px;
 }
 
 .form-actions {
